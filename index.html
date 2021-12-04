@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Shapes Calculator by Inheritance">
+    <meta name="author" content="Mohammad Reza Ebrahimi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex">
+            <div class="form-div">
+
+                <form action="#">
+                    <label for="shape">
+                        <span>Select Your Sahpe : </span>
+                        <select name="shape" id="shape" onchange="calcSelect()">
+                            <option selected disabled>Select Shape</option>
+                        </select>
+                    </label>
+                </form>
+
+                <hr class="hr">
+
+                <div id="input-div"></div>
+
+                <hr class="hr">
+            </div>
+            
+            <div class="result-div">
+                <div class="area-div">
+                    <span>Area : </span>
+                    <span id="area-text">0</span>
+                </div>
+                <div class="perimeter-div">
+                    <span>Perimeter : </span>
+                    <span id="perimeter-text">0</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/shape.js"></script>
+    <script src="assets/js/Shape-Object.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
