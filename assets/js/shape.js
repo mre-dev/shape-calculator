@@ -24,15 +24,15 @@ class Rectangle extends Shape {
 class Square extends Shape {
     constructor() {
         super();
-        this.getArea = (width) => +width * +width;
-        this.getPerimeter = (width) => +width * 4;
+        this.getArea = (width = "0") => +width * +width;
+        this.getPerimeter = (width = "0") => +width * 4;
     }
 }
 
 class Circle extends Shape {
     constructor() {
         super();
-        this.getArea = (radius) => +radius * +radius * Math.PI;
-        this.getPerimeter = (radius) => +radius * 2 * Math.PI;
+        this.getArea = (radius = "0") => +radius * +radius * Math.PI;
+        this.getPerimeter = (radius = "0") => +radius * 2 * Math.PI;
     }
 }

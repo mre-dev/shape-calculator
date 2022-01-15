@@ -37,11 +37,10 @@ function calculateShape() {
     let getAllInputValue = "";
     (getAllInputValue_Function = () => {
         for (let i = 0; i < shapesInputDetails[SHAPE].input.length; i++) {
-            getAllInputValue += document.getElementById(shapesInputDetails[SHAPE].input[i].id).value;
+            getAllInputValue += document.getElementById(shapesInputDetails[SHAPE].input[i].id).value + ',';
         }
+        getAllInputValue = getAllInputValue.slice(0, -1);
     })();
-    getAllInputValue = getAllInputValue.replace(/.{1}/g, '$&, ');
-    getAllInputValue = getAllInputValue.slice(0, -2);
     document.getElementById("area-text").innerHTML = CALC_METHOD.getArea(getAllInputValue);
     document.getElementById("perimeter-text").innerHTML = CALC_METHOD.getPerimeter(getAllInputValue);    
 }
